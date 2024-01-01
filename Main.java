@@ -31,4 +31,7 @@ public class Main {
 	static String original;
 	static String copy;
 	static boolean scriptWorking = false;
+	static String fileName;
+	static String function;
+	static int count = 0;
 }
