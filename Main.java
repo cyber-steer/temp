@@ -34,4 +34,12 @@ public class Main {
 	static String fileName;
 	static String function;
 	static int count = 0;
+
+	public static void insertStringInFile(File inFile, int lineno, String lineToBeInserted) throws Exception {
+		// 파일이 없으면 새로 만들기
+		if(!inFile.exists()) {
+			inFile.createNewFile();
+
+		}
+	}
 }
