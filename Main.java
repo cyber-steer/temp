@@ -58,6 +58,10 @@ public class Main {
 			PrintWriter pw = new PrintWriter(fos);
 
 			String line;
+			int lineCount = 1;
+			
+			while ((line = br.readLine()) != null) {
+			}
 		}
 	}
 }
