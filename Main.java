@@ -65,6 +65,8 @@ public class Main {
 				if(lineCount == lineno) {
 					pw.println(lineToBeInserted);
 				}
+
+				pw.println(line);
 			}
 		}
 	}
