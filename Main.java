@@ -40,6 +40,9 @@ public class Main {
 		if(!inFile.exists()) {
 			inFile.createNewFile();
 
+			String message = fileName + " create";
+			script(message, true);
+			FileWriter writer = new FileWriter(inFile);
 		}
 	}
 }
