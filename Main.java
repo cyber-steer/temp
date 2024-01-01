@@ -52,6 +52,9 @@ public class Main {
 
 			// 입력 스트림, 출력 스트림 생성
 			FileInputStream fis = new FileInputStream(inFile);
+			FileOutputStream fos = new FileOutputStream(outFile);
+
+			BufferedReader br = new BufferedReader(new InputStreamReader(fis));
 		}
 	}
 }
