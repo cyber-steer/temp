@@ -61,6 +61,10 @@ public class Main {
 			int lineCount = 1;
 			
 			while ((line = br.readLine()) != null) {
+				// 특정 줄에 도달하면, 문자열 삽입
+				if(lineCount == lineno) {
+					pw.println(lineToBeInserted);
+				}
 			}
 		}
 	}
