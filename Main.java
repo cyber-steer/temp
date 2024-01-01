@@ -55,6 +55,9 @@ public class Main {
 			FileOutputStream fos = new FileOutputStream(outFile);
 
 			BufferedReader br = new BufferedReader(new InputStreamReader(fis));
+			PrintWriter pw = new PrintWriter(fos);
+
+			String line;
 		}
 	}
 }
