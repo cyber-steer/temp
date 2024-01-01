@@ -28,4 +28,7 @@ import java.util.regex.Pattern;
 public class Main {
 	static List<String> dates;
 	static int datesHeader = 0;
+	static String original;
+	static String copy;
+	static boolean scriptWorking = false;
 }
