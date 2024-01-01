@@ -70,6 +70,10 @@ public class Main {
 				lineCount++;
 			}
 
+			// 만약 마지막 줄이 삽입할 줄이라면, 여기서 문자열 삽입
+			if(lineCount == lineno) {
+				pw.println(lineToBeInserted);
+			}
 		}
 	}
 }
