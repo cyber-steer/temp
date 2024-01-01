@@ -43,6 +43,12 @@ public class Main {
 			String message = fileName + " create";
 			script(message, true);
 			FileWriter writer = new FileWriter(inFile);
+			writer.write(lineToBeInserted + "\n");
+			writer.close();
+		}
+		else {
+			// 원본 파일을 임시 파일로 복사하면서 특정 줄에 문자열 삽입
+			File outFile = new File("outfile.txt");
 		}
 	}
 }
