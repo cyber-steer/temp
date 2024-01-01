@@ -67,7 +67,9 @@ public class Main {
 				}
 
 				pw.println(line);
+				lineCount++;
 			}
+
 		}
 	}
 }
