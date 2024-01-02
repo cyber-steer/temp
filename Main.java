@@ -82,7 +82,9 @@ public class Main {
 			// 원본 파일 삭제
 			if(!inFile.delete()) {
 				System.out.println("Could not delete file");
+				return;
 			}
+
 		}
 	}
 }
