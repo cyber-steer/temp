@@ -76,6 +76,9 @@ public class Main {
 			}
 
 			pw.flush();
+			pw.close();
+			br.close();
+
 		}
 	}
 }
