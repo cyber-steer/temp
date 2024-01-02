@@ -133,5 +133,9 @@ public class Main {
 		int logCount = 1;
 		fileName = original.replace(".java", "");
 		String[] filePaths = fileName.split("/");
+		fileName = filePaths[filePaths.length-1];
+		String message = fileName;
+		while ((line = br.readLine()) != null) {
+		}
 	}
 }
