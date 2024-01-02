@@ -124,5 +124,8 @@ public class Main {
 		//     insertStringInFile(new File(copy), lineNumber, "hello");
 
 		Path sourcePath = Paths.get(original); // 기존의 자바 파일
+		String targetDirectory = "."; // 현재 디렉토리
+		int fileCount = 1;
+
 	}
 }
