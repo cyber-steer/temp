@@ -112,5 +112,11 @@ public class Main {
 
 	public static void main(String args[]) throws Exception {
 		original = args[0];
+		copy = args[1];
+		String timeSet = args[2];
+//		original = "SqliteDao.java";
+//		copy = "copy.txt";
+//		String timeSet = "2023/3/8";
+		
 	}
 }
