@@ -127,5 +127,8 @@ public class Main {
 		String targetDirectory = "."; // 현재 디렉토리
 		int fileCount = 1;
 
+		BufferedReader br = new BufferedReader(new FileReader(sourcePath.toFile()));
+		String line;
+		boolean ignore = false;
 	}
 }
