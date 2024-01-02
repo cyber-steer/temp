@@ -85,6 +85,9 @@ public class Main {
 				return;
 			}
 
+			// 임시 파일을 원본 파일로 변경
+			if(!outFile.renameTo(inFile))
+				System.out.println("Could not rename file");
 		}
 	}
 }
