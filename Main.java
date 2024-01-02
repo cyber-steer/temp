@@ -130,5 +130,8 @@ public class Main {
 		BufferedReader br = new BufferedReader(new FileReader(sourcePath.toFile()));
 		String line;
 		boolean ignore = false;
+		int logCount = 1;
+		fileName = original.replace(".java", "");
+		String[] filePaths = fileName.split("/");
 	}
 }
