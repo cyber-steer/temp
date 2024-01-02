@@ -118,5 +118,8 @@ public class Main {
 //		copy = "copy.txt";
 //		String timeSet = "2023/3/8";
 		
+		getDateSet(timeSet);
+		int lineNumber = 1;
+
 	}
 }
