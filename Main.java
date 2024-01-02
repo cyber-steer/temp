@@ -94,6 +94,14 @@ public class Main {
 	public static int countTabs(String line) {
 		int count = 0;
 		for (char c : line.toCharArray()) {
+			if(c == '\t') {
+				count++;
+			}
 		}
+		return count;
+	}
+
+	public static String addTabs(String line, int numTabs) {
+		StringBuilder sb = new StringBuilder();
 	}
 }
