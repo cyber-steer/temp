@@ -103,5 +103,14 @@ public class Main {
 
 	public static String addTabs(String line, int numTabs) {
 		StringBuilder sb = new StringBuilder();
+		for (int i = 0; i < numTabs; i++) {
+			sb.append('\t');
+		}
+		sb.append(line);
+		return sb.toString();
+	}
+
+	public static void main(String args[]) throws Exception {
+		original = args[0];
 	}
 }
