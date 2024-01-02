@@ -139,6 +139,10 @@ public class Main {
 			count ++;
 			System.out.println((logCount++) + ": " + line);
 
+			if(line.contains("public class")) {
+				scriptWorking = true;
+				script(fileName + " import add");
+			}
 		}
 	}
 }
