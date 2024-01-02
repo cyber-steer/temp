@@ -136,6 +136,9 @@ public class Main {
 		fileName = filePaths[filePaths.length-1];
 		String message = fileName;
 		while ((line = br.readLine()) != null) {
+			count ++;
+			System.out.println((logCount++) + ": " + line);
+
 		}
 	}
 }
