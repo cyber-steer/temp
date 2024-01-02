@@ -79,6 +79,10 @@ public class Main {
 			pw.close();
 			br.close();
 
+			// 원본 파일 삭제
+			if(!inFile.delete()) {
+				System.out.println("Could not delete file");
+			}
 		}
 	}
 }
