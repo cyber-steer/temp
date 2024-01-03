@@ -149,6 +149,15 @@ public class Main {
 					targetPath = Paths.get(targetDirectory, String.valueOf(copy));
 					insertStringInFile(new File(copy), lineNumber++, line);
 				}
+				else if(line.trim().endsWith("{")) {
+					if(line.contains("try")) {
+						targetPath = Paths.get(targetDirectory, String.valueOf(copy));
+						insertStringInFile(new File(copy), lineNumber++, line);
+						int numTabs = countTabs(line);
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+				}
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
