@@ -143,6 +143,11 @@ public class Main {
 				scriptWorking = true;
 				script(fileName + " import add");
 			}
+			try {
+				Path targetPath = null;
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 	}
 }
