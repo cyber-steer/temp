@@ -154,6 +154,9 @@ public class Main {
 						targetPath = Paths.get(targetDirectory, String.valueOf(copy));
 						insertStringInFile(new File(copy), lineNumber++, line);
 						int numTabs = countTabs(line);
+						String catchStart = addTabs("} catch (Exception e) {", numTabs);
+						String catchStr = addTabs("e.printStackTrace();", numTabs + 1);
+						String catchEnd = addTabs("}", numTabs);
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
