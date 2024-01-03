@@ -163,6 +163,9 @@ public class Main {
 					} catch (Exception e) {
 					else if(line.contains("Thread(()->{")) {
 						targetPath = Paths.get(targetDirectory, String.valueOf(copy));
+						insertStringInFile(new File(copy), lineNumber++, line);
+						int numTabs = countTabs(line);
+						String end = addTabs("});", numTabs);
 					});
 						e.printStackTrace();
 					}
