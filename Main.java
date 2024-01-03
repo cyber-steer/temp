@@ -157,6 +157,9 @@ public class Main {
 						String catchStart = addTabs("} catch (Exception e) {", numTabs);
 						String catchStr = addTabs("e.printStackTrace();", numTabs + 1);
 						String catchEnd = addTabs("}", numTabs);
+						insertStringInFile(new File(copy), lineNumber, catchStart);
+						insertStringInFile(new File(copy), lineNumber + 1, catchStr);
+						insertStringInFile(new File(copy), lineNumber + 2, catchEnd);
 					} catch (Exception e) {
 						e.printStackTrace();
 					}
