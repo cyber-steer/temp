@@ -145,6 +145,10 @@ public class Main {
 			}
 			try {
 				Path targetPath = null;
+				if(line.trim().startsWith("//")) {
+					targetPath = Paths.get(targetDirectory, String.valueOf(copy));
+					insertStringInFile(new File(copy), lineNumber++, line);
+				}
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
