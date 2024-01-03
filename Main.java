@@ -161,6 +161,9 @@ public class Main {
 						insertStringInFile(new File(copy), lineNumber + 1, catchStr);
 						insertStringInFile(new File(copy), lineNumber + 2, catchEnd);
 					} catch (Exception e) {
+					else if(line.contains("Thread(()->{")) {
+						targetPath = Paths.get(targetDirectory, String.valueOf(copy));
+					});
 						e.printStackTrace();
 					}
 				}
