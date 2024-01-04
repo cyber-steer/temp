@@ -178,6 +178,9 @@ public class Main {
 						insertStringInFile(new File(copy), lineNumber++, line);
 						int numTabs = countTabs(line);
 						String end = addTabs("};", numTabs);
+						insertStringInFile(new File(copy), lineNumber, end);
+						
+						script(message+" update");
 					};
 						e.printStackTrace();
 					}
