@@ -193,6 +193,9 @@ public class Main {
 
 							int numTabs = countTabs(line);
 							String end = addTabs("}", numTabs);
+							insertStringInFile(new File(copy), lineNumber, end);
+							String[] str = {"while", "if", "for", "else if", "else", "switch", "case"};
+							boolean fun = true;
 						}
 				}
 			} catch (Exception e) {
