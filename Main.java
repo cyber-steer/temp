@@ -229,7 +229,9 @@ public class Main {
 								}
 								else {
 									System.out.println("funName : "+funName);
+									message += " "+funName;
 								}
+								script(message);
 							}
 						}
 				}
