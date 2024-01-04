@@ -199,6 +199,9 @@ public class Main {
 							for(String type : str) {
 								if(line.contains(type)) {
 									if(type.equals("case")) {
+										int start = line.indexOf("case ") + "case ".length();
+										int endIdx = line.indexOf(":");
+										String temp = line.substring(start, endIdx);
 									}
 								}
 							}
