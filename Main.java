@@ -220,6 +220,13 @@ public class Main {
 						        Matcher matcher = pattern.matcher(line);
 						        
 						        String funName = "none";
+						        if(matcher.find()) {
+						        	funName = matcher.group(1);
+						}
+								
+								if(funName.equals(fileName)) {
+									message += " structor";
+								}
 							}
 						}
 				}
