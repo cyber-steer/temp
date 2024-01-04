@@ -214,6 +214,9 @@ public class Main {
 								}
 							}
 							if(fun && !line.contains("public class")) {
+
+						        String regex = "\\s(\\w+)\\(";
+						        Pattern pattern = Pattern.compile(regex);
 							}
 						}
 				}
