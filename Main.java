@@ -227,6 +227,9 @@ public class Main {
 								if(funName.equals(fileName)) {
 									message += " structor";
 								}
+								else {
+									System.out.println("funName : "+funName);
+								}
 							}
 						}
 				}
