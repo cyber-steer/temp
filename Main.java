@@ -213,6 +213,8 @@ public class Main {
 									break;
 								}
 							}
+							if(fun && !line.contains("public class")) {
+							}
 						}
 				}
 			} catch (Exception e) {
