@@ -196,6 +196,12 @@ public class Main {
 							insertStringInFile(new File(copy), lineNumber, end);
 							String[] str = {"while", "if", "for", "else if", "else", "switch", "case"};
 							boolean fun = true;
+							for(String type : str) {
+								if(line.contains(type)) {
+									if(type.equals("case")) {
+									}
+								}
+							}
 						}
 				}
 			} catch (Exception e) {
