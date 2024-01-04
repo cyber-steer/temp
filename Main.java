@@ -217,6 +217,9 @@ public class Main {
 
 						        String regex = "\\s(\\w+)\\(";
 						        Pattern pattern = Pattern.compile(regex);
+						        Matcher matcher = pattern.matcher(line);
+						        
+						        String funName = "none";
 							}
 						}
 				}
