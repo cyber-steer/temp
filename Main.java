@@ -202,6 +202,12 @@ public class Main {
 										int start = line.indexOf("case ") + "case ".length();
 										int endIdx = line.indexOf(":");
 										String temp = line.substring(start, endIdx);
+										script(message + " " +temp);
+										message += " case";
+									}
+									else {
+										message += " " +type;
+										script(message);
 									}
 								}
 							}
