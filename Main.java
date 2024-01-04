@@ -175,6 +175,9 @@ public class Main {
 					});
 					else if(line.contains("= {") || line.contains("={")) {
 						targetPath = Paths.get(targetDirectory, String.valueOf(copy));
+						insertStringInFile(new File(copy), lineNumber++, line);
+						int numTabs = countTabs(line);
+						String end = addTabs("};", numTabs);
 					};
 						e.printStackTrace();
 					}
