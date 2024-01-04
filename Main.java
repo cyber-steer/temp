@@ -166,6 +166,9 @@ public class Main {
 						insertStringInFile(new File(copy), lineNumber++, line);
 						int numTabs = countTabs(line);
 						String end = addTabs("});", numTabs);
+						insertStringInFile(new File(copy), lineNumber, end);
+						
+						String threadName = line.split(" ")[0].equals("Thread") ? line.split(" ")[1]:line.trim().split(" ")[0];
 					});
 						e.printStackTrace();
 					}
