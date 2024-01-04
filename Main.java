@@ -181,7 +181,10 @@ public class Main {
 						insertStringInFile(new File(copy), lineNumber, end);
 						
 						script(message+" update");
+
 					};
+					else {
+					}
 						e.printStackTrace();
 					}
 				}
