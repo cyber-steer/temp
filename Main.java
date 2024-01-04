@@ -173,6 +173,9 @@ public class Main {
 						script(message);
 
 					});
+					else if(line.contains("= {") || line.contains("={")) {
+						targetPath = Paths.get(targetDirectory, String.valueOf(copy));
+					};
 						e.printStackTrace();
 					}
 				}
