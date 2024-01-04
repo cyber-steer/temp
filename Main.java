@@ -209,6 +209,8 @@ public class Main {
 										message += " " +type;
 										script(message);
 									}
+									fun = false;
+									break;
 								}
 							}
 						}
