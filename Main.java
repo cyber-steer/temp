@@ -187,6 +187,10 @@ public class Main {
 					}
 						e.printStackTrace();
 					}
+						if(!ignore) {
+							targetPath = Paths.get(targetDirectory, String.valueOf(copy));
+							insertStringInFile(new File(copy), lineNumber++, line);
+						}
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
