@@ -232,10 +232,13 @@ public class Main {
 									message += " "+funName;
 								}
 								script(message);
+								
 							}
 						}
 				}
 			} catch (Exception e) {
+				else if(line.trim().startsWith("}")) {
+				}
 				e.printStackTrace();
 			}
 		}
