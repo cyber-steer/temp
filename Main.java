@@ -256,7 +256,12 @@ public class Main {
 						lineNumber++;
 						int idx = message.lastIndexOf(" ");
 						if(idx != -1) {
+							message = message.substring(0, idx);
 						}
+					}
+				}
+				else {
+					if(!ignore) {
 					}
 				}
 				e.printStackTrace();
