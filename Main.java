@@ -241,6 +241,12 @@ public class Main {
 					if(line.trim().contains("}")) {
 						if(ignore) {
 							lineNumber += 3;
+							ignore = false;
+							
+						}
+						else {
+							lineNumber++;
+							int idx = message.lastIndexOf(" ");
 						}
 					}
 				}
