@@ -238,6 +238,11 @@ public class Main {
 				}
 			} catch (Exception e) {
 				else if(line.trim().startsWith("}")) {
+					if(line.trim().contains("}")) {
+						if(ignore) {
+							lineNumber += 3;
+						}
+					}
 				}
 				e.printStackTrace();
 			}
