@@ -253,6 +253,10 @@ public class Main {
 						}
 					}
 					else {
+						lineNumber++;
+						int idx = message.lastIndexOf(" ");
+						if(idx != -1) {
+						}
 					}
 				}
 				e.printStackTrace();
