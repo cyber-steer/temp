@@ -247,7 +247,12 @@ public class Main {
 						else {
 							lineNumber++;
 							int idx = message.lastIndexOf(" ");
+							if(idx != -1) {
+								message = message.substring(0, idx);
+							}
 						}
+					}
+					else {
 					}
 				}
 				e.printStackTrace();
