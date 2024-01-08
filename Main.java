@@ -262,6 +262,9 @@ public class Main {
 				}
 				else {
 					if(!ignore) {
+						targetPath = Paths.get(targetDirectory, String.valueOf(copy));
+						insertStringInFile(new File(copy), lineNumber++, line);
+						
 					}
 				}
 				e.printStackTrace();
