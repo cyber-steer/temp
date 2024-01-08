@@ -274,9 +274,15 @@ public class Main {
 
 				// copy.txt를 count를 붙여서 다시 복사해서 저장
 				if(targetPath != null) {
+					Path copyPath = Paths.get(targetDirectory, String.valueOf(fileCount++) + ".txt");
+//					Files.copy(targetPath, copyPath, StandardCopyOption.REPLACE_EXISTING);
 				}
+
+
 				e.printStackTrace();
 			}
 		}
 	}
+		br.close();
 }
+
