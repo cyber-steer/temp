@@ -265,6 +265,9 @@ public class Main {
 						targetPath = Paths.get(targetDirectory, String.valueOf(copy));
 						insertStringInFile(new File(copy), lineNumber++, line);
 						
+						script(message +" update");
+					}
+					else {
 					}
 				}
 				e.printStackTrace();
