@@ -298,12 +298,18 @@ public class Main {
 				try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
 				    String line;
 				    while ((line = reader.readLine()) != null) {
+				        System.out.println(line);
 				}
 				} catch (Exception e) {
+				process.waitFor();
 					e.printStackTrace();
 				}
 			} catch (Exception e) {
+//			String cmd = dates.get(datesHeader++) + "\"" + message+"\"";
+//			System.out.println(cmd);
+//			System.out.println();
 				e.printStackTrace();
 			}
+
 		}
 	}
