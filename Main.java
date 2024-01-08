@@ -286,3 +286,14 @@ public class Main {
 		br.close();
 }
 
+	public static void script(String message, boolean b) {
+		if(b) {
+			try {
+				String cmdStr = dates.get(datesHeader++) + "\"" + message+"\"";
+				String[] cmd = getArgument(cmdStr);
+				Thread.sleep(100);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+	}
