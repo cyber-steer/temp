@@ -268,7 +268,12 @@ public class Main {
 						script(message +" update");
 					}
 					else {
+						//                  lineNumber++;
 					}
+				}
+
+				// copy.txt를 count를 붙여서 다시 복사해서 저장
+				if(targetPath != null) {
 				}
 				e.printStackTrace();
 			}
