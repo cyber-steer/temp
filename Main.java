@@ -292,6 +292,16 @@ public class Main {
 				String cmdStr = dates.get(datesHeader++) + "\"" + message+"\"";
 				String[] cmd = getArgument(cmdStr);
 				Thread.sleep(100);
+				Process process = new ProcessBuilder(cmd).start();
+
+				// Read output
+				try (BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()))) {
+				    String line;
+				    while ((line = reader.readLine()) != null) {
+				}
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
