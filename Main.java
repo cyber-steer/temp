@@ -329,6 +329,9 @@ public class Main {
 		// 시작 날짜 설정
 		ZonedDateTime startDate = ZonedDateTime.of(LocalDateTime.of(year, Month.of(month), day, 10, 0), ZoneId.of("Asia/Seoul"));
 
+		// 결과를 저장할 리스트
+		ArrayList<String> list = new ArrayList<>();
+		dates = new ArrayList<>();
 	}
 		}
 	}
