@@ -311,5 +311,13 @@ public class Main {
 				e.printStackTrace();
 			}
 
+	public static void script(String message) {
+		try {
+			if(count %3 == 0) {
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 		}
 	}
