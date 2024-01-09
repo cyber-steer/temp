@@ -323,6 +323,9 @@ public class Main {
 
 	public static void getDateSet(String timeData) {
 		String[] timeDatas = timeData.split("/");
+		int year = Integer.parseInt(timeDatas[0]);
+		int month = Integer.parseInt(timeDatas[1]);
+		int day = Integer.parseInt(timeDatas[2]);
 	}
 		}
 	}
