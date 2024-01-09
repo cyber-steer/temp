@@ -326,6 +326,9 @@ public class Main {
 		int year = Integer.parseInt(timeDatas[0]);
 		int month = Integer.parseInt(timeDatas[1]);
 		int day = Integer.parseInt(timeDatas[2]);
+		// 시작 날짜 설정
+		ZonedDateTime startDate = ZonedDateTime.of(LocalDateTime.of(year, Month.of(month), day, 10, 0), ZoneId.of("Asia/Seoul"));
+
 	}
 		}
 	}
