@@ -314,10 +314,15 @@ public class Main {
 	public static void script(String message) {
 		try {
 			if(count %3 == 0) {
+				script(message, scriptWorking);				
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+
+	public static void getDateSet(String timeData) {
+		String[] timeDatas = timeData.split("/");
 	}
 		}
 	}
