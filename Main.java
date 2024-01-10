@@ -350,6 +350,10 @@ public class Main {
                     times.add(String.format("%02d:%02d:%02d", hour, minute, second));
 }
 
+                Collections.sort(times); // 생성된 시간들을 정렬
+                for(String data : times) {
+                	String[] datas = data.split(":");
+}
 }
 	}
 		}
