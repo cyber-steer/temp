@@ -377,4 +377,8 @@ public class Main {
 		return r.nextInt((max - min) + 1) + min;
 	}
 	
+	public static String[] getArgument(String cmdString) {
+        Pattern pattern = Pattern.compile("[^\\s\"']+|\"([^\"]*)\"|'([^']*)'");
+        Matcher matcher = pattern.matcher(cmdString);
+	}
 	}
