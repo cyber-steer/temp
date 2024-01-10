@@ -347,7 +347,9 @@ public class Main {
                     int minute = getRandomNumberInRange(0, 59);
                     int second = getRandomNumberInRange(0, 59);
 
+                    times.add(String.format("%02d:%02d:%02d", hour, minute, second));
 }
+
 }
 	}
 		}
