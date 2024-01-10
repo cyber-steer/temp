@@ -372,5 +372,7 @@ public class Main {
 		if(min >= max) {
 			throw new IllegalArgumentException("max must be greater than min");
 		}
+
+		Random r = new Random();
 	}
 	}
