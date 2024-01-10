@@ -344,6 +344,9 @@ public class Main {
 
                 for (int j = 0; j < count; j++) {
                     int hour = getRandomNumberInRange(10, 16);
+                    int minute = getRandomNumberInRange(0, 59);
+                    int second = getRandomNumberInRange(0, 59);
+
 }
 }
 	}
