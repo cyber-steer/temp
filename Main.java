@@ -361,5 +361,11 @@ public class Main {
                 
 }
 	}
+        // 결과 출력
+        for (String s : list) {
+            dates.add("bash git.sh \""+s+"\" ");
+}
+
 		}
+
 	}
