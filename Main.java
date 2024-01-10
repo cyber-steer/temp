@@ -338,6 +338,9 @@ public class Main {
             ZonedDateTime date = startDate.plusDays(i);
             if (date.getDayOfWeek() != DayOfWeek.SATURDAY && date.getDayOfWeek() != DayOfWeek.SUNDAY) {
 
+                List<String> times = new ArrayList<>();
+
+                int count = getRandomNumberInRange(5, 20); // 하루에 생성할 시간의 수
 }
 	}
 		}
