@@ -353,6 +353,9 @@ public class Main {
                 Collections.sort(times); // 생성된 시간들을 정렬
                 for(String data : times) {
                 	String[] datas = data.split(":");
+                	int hour = Integer.parseInt(datas[0]);
+                	int minute = Integer.parseInt(datas[1]);
+                	int sec = Integer.parseInt(datas[2]);
 }
 }
 	}
