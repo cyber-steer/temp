@@ -356,7 +356,9 @@ public class Main {
                 	int hour = Integer.parseInt(datas[0]);
                 	int minute = Integer.parseInt(datas[1]);
                 	int sec = Integer.parseInt(datas[2]);
+                	list.add(date.withHour(hour).withMinute(minute).withSecond(sec).format(DateTimeFormatter.ofPattern("EEE MMM d HH:mm:ss yyyy Z", Locale.ENGLISH)));
 }
+                
 }
 	}
 		}
