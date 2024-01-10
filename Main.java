@@ -341,6 +341,10 @@ public class Main {
                 List<String> times = new ArrayList<>();
 
                 int count = getRandomNumberInRange(5, 20); // 하루에 생성할 시간의 수
+
+                for (int j = 0; j < count; j++) {
+                    int hour = getRandomNumberInRange(10, 16);
+}
 }
 	}
 		}
