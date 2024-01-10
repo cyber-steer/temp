@@ -332,6 +332,9 @@ public class Main {
 		// 결과를 저장할 리스트
 		ArrayList<String> list = new ArrayList<>();
 		dates = new ArrayList<>();
+
+		// 10개월 동안 반복
+        for (int i = 0; i < 20*4*5; i++) {  // 각 달은 4주, 각 주는 5일(주말 제외)로 가정
 	}
 		}
 	}
