@@ -389,6 +389,10 @@ public class Main {
             } else if (matcher.group(2) != null) {
                 // Add single-quoted string without the quotes
                 cmd.add(matcher.group(2));
+            } else {
+                // Add unquoted word
+                cmd.add(matcher.group());
+}
 }
 }
 }
