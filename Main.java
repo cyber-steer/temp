@@ -380,5 +380,9 @@ public class Main {
 	public static String[] getArgument(String cmdString) {
         Pattern pattern = Pattern.compile("[^\\s\"']+|\"([^\"]*)\"|'([^']*)'");
         Matcher matcher = pattern.matcher(cmdString);
+
+        List<String> cmd = new ArrayList<>();
+        while (matcher.find()) {
+}
 	}
 	}
