@@ -394,6 +394,7 @@ public class Main {
                 cmd.add(matcher.group());
 }
 }
+
 }
 }
 	}
