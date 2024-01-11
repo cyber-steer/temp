@@ -386,6 +386,10 @@ public class Main {
             if (matcher.group(1) != null) {
                 // Add double-quoted string without the quotes
                 cmd.add(matcher.group(1));
+            } else if (matcher.group(2) != null) {
+                // Add single-quoted string without the quotes
+                cmd.add(matcher.group(2));
+}
 }
 }
 	}
