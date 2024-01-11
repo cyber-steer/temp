@@ -383,6 +383,10 @@ public class Main {
 
         List<String> cmd = new ArrayList<>();
         while (matcher.find()) {
+            if (matcher.group(1) != null) {
+                // Add double-quoted string without the quotes
+                cmd.add(matcher.group(1));
+}
 }
 	}
 	}
