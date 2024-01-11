@@ -395,6 +395,9 @@ public class Main {
 }
 }
 
+        // Convert list to array
+        String[] cmdArray = cmd.toArray(new String[0]);
+
 }
 }
 	}
